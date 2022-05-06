@@ -13,11 +13,10 @@ const QuoteBox = () => {
         const randomIndex = Math.floor(Math.random() * quotes.length);
         setIndex(randomIndex);
     }
-    
+
     const randomColor = Math.floor(Math.random() * colors.length);
     document.body.style = `background: ${colors[randomColor]}`;
 
-    console.log(quotes);
 
     return (
         <div className='container' style={{color: colors[randomColor]}}>
